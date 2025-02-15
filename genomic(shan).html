@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 保持与index.html相同的head部分 -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>GrassGenetics - Genomics</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- 保持与index.html相同的CSS引入 -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script>
+        // 用于调试文件加载
+        window.addEventListener('load', function () {
+            console.log('Page loaded');
+        });
+    </script>
+    <!-- 交互功能 JS -->
+    <script src="assets/js/genomic-interaction.js"></script>
+</head>
+
+<body class="page-genomic">
+    <!-- 复用Header -->
+    <header id="header" class="header sticky-top">
+        <div class="topbar d-flex align-items-center">
+            <!-- 复用topbar内容 -->
+        </div>
+        <div class="branding d-flex align-items-center">
+            <div class="container position-relative d-flex align-items-center justify-content-end">
+                <a href="index.html" class="logo d-flex align-items-center me-auto">
+                    <h1 class="sitename">GrassGenetics</h1>
+                </a>
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genomic.html" class="active">Genomics</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- 其他导航项 -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Main Section -->
+        <section class="section" style="margin-top: 80px;">
+            <div class="container">
+                <div class="data-source">
+                    <h3>▼ Data source</h3>
+
+                    <!-- 搜索和下载区域 -->
+                    <div class="search-area">
+                        <div class="search-box">
+                            <label>Search:</label>
+                            <input type="text" placeholder="Enter search terms...">
+                        </div>
+                        <button class="download-button">Download</button>
+                    </div>
+
+                    <!-- 列选择复选框 -->
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gene-id" checked>
+                            <label for="gene-id">Gene ID</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="chromosome" checked>
+                            <label for="chromosome">Chromosome</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="start-position" checked>
+                            <label for="start-position">Start Position</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="end-position" checked>
+                            <label for="end-position">End Position</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="strand" checked>
+                            <label for="strand">Strand</label>
+                        </div>
+                    </div>
+
+                    <!-- 数据表格 -->
+                    <table class="genomic-table">
+                        <thead>
+                            <tr>
+                                <th>Gene ID</th>
+                                <th>Chromosome</th>
+                                <th>Start Position</th>
+                                <th>End Position</th>
+                                <th>Strand</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MsG0180000001.01</td>
+                                <td>Chr1</td>
+                                <td>146833</td>
+                                <td>150094</td>
+                                <td>+</td>
+                            </tr>
+                            <!-- 更多数据行... -->
+                        </tbody>
+                    </table>
+
+                    <!-- 分页区域 -->
+                    <div class="pagination-area">
+                        <div class="page-info">
+                            Showing 1 to 1 of 1 entries
+                        </div>
+                        <div class="pagination">
+                            <button class="page-button" disabled>Previous</button>
+                            <button class="page-button active">1</button>
+                            <button class="page-button">2</button>
+                            <button class="page-button">3</button>
+                            <button class="page-button">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    
+    <!-- 复用Footer -->
+    <footer id="footer" class="footer light-background">
+        <!-- 复用footer内容 -->
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- 添加新的JS文件用于处理基因数据表格 -->
+    <script src="assets/js/genomic-table.js"></script>
+</body>
+
+</html>
