@@ -11,7 +11,7 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* 新增 */
-/* Data source area styles */
+/* 数据源区域样式 */
 .data-source {
   background: #f8f9fa;
   border-radius: 8px;
@@ -20,7 +20,7 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Data source title */
+/* 数据源标题 */
 .data-source h3 {
   color: #333;
   font-size: 16px;
@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-/* Search area */
+/* 搜索区域 */
 .search-area {
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@
   padding: 6px 12px;
 }
 
-/* Checkbox group */
+/* 复选框组 */
 .checkbox-group {
   display: flex;
   gap: 20px;
@@ -62,7 +62,7 @@
   gap: 5px;
 }
 
-/* Table styles */
+/* 表格样式 */
 .genomic-table {
   width: 100%;
   border-collapse: collapse;
@@ -83,7 +83,7 @@
   border-bottom: 1px solid #dee2e6;
 }
 
-/* Pagination styles */
+/* 分页样式 */
 .pagination-area {
   display: flex;
   justify-content: space-between;
@@ -99,7 +99,6 @@
   display: flex;
   gap: 5px;
 }
-
 .page-button {
   padding: 6px 12px;
   border: 1px solid #dee2e6;
@@ -116,11 +115,11 @@
 }
 
 .page-button:hover:not(.active) {
-  background: rgba(63, 187, 192, 0.1);  /* Lighter color for hover background */
+  background: rgba(63, 187, 192, 0.1);  /* 使用稍淡的颜色作为悬停背景 */
   border-color: #3fbbc0;
 }
 
-/* Download button */
+/* 下载按钮 */
 .download-button {
   background: #3fbbc0;
   color: white;
@@ -133,7 +132,6 @@
 .download-button:hover {
   background: #3fbbc0;
 }
-
 /* Genomic page styles */
 .data-source {
   background: #fff;
@@ -174,17 +172,19 @@
   margin-bottom: 0;
 }
 
-/* Responsive adjustments */
+/* 响应式调整 */
 @media (max-width: 768px) {
   .search-box {
-    flex-direction: column;
-    align-items: stretch;
+      flex-direction: column;
+      align-items: stretch;
   }
   
   .search-box label {
-    margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
   }
 }
+
+
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
