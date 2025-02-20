@@ -10,7 +10,7 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* 新增 */
+
 /* 数据源区域样式 */
 .data-source {
   background: #f8f9fa;
@@ -445,8 +445,8 @@ h6 {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
-  padding: 8px 20px;
-  margin: 0 5px 0 30px;
+  padding: 8px 10px;
+  margin: 3px 1px 3px 20px;
   border-radius: 4px;
   transition: 0.3s;
 }
